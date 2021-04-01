@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Autor: Lucas Carvalho Sobreiro
+RA: 2220103982
+-->
+<html lang="pt-br">
+	<head>
+		<title>Jogo de Dados - By Lucas</title>
+		<meta charset="utf-8">
+		<script src="jogo_de_dados.js"></script>
+		<style>
+			body {
+			background-color:#37A;
+			text-align:center;
+			font-family:arial;
+			}
+			img {
+				border-radius:10px;
+			}
+			#p {
+				font-size:30px;
+			}
+		</style>
+	</head>
+	<body>
+		<input id="J1nome_id" placeholder="Nome do jogador 1"></input>
+		<input id="J2nome_id" placeholder="Nome do jogador 2"></input>
+		<input id="button2" type="submit" value="Jogar" onclick="cadastrar()"></input>
+		<p id="jogador_id"></p>
+		<p id="p"><br></p>
+		<button id="button" onclick="roll()" style="visibility:hidden;">Roll</button><br>
+		<img id="dado_id" width="100px">
+		<img id="dado2_id" width="100px">
+		<div>
+			<p id="dadoS_id"></p>
+			<p id="dadoP_id"></p>
+		</div><br>
+		<span>
+			<p id="J1_id"></p>
+			<p id="J2_id"></p>
+		</span>
+	</body>
+</html>
